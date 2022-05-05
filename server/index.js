@@ -152,5 +152,6 @@ export async function createServer(
 }
 
 if (!isTest) {
+ console.log('\n\n\n\n port', PORT); 
   createServer().then(({ app }) => app.listen(PORT));
 }
